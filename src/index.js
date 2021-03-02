@@ -18,12 +18,12 @@ function Board (props){
     <div>
       <div className="board-row">
         <Square 
-          value={props.squares[1]} 
-          onClick={()=>props.onClick(1)}
+          value={props.squares[0]} 
+          onClick={()=>props.onClick(0)}
         />
         <Square 
           value={props.squares[1]} 
-          onClick={()=>props.onClick(2)}
+          onClick={()=>props.onClick(1)}
         />
         <Square 
           value={props.squares[2]} 
