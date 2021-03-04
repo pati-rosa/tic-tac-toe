@@ -110,14 +110,12 @@ function Game(props) {
     
     setHistory(historyCopy.concat([{squares: squares}]));
     setStepNumber(historyCopy.length);
-     setXIsNext(!xIsNext)
+    setXIsNext(!xIsNext)
   }
 
   function jumpTo(step) {
-    this.setState({
-      stepNumber: step,
-      xIsNext: (step % 2) === 0,
-    })
+   setStepNumber(step);
+    setXIsNext((step % 2) === 0)
   }
 
   const current = history[stepNumber];
